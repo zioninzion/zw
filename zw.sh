@@ -38,6 +38,10 @@ if [[ "$1" == "-t" ]]; then
     fi
     #sleep 1
   done
+elif [[ "$1" == "--clean" ]]; then
+  # Clean up .zws
+  echo "" > ~/.zws
+  exit 0
 else
   # TODO show LAP
   # Stopwatch
@@ -51,10 +55,7 @@ else
       ln=$(echo -n $2 | wc -m)
       line=$(grep $2 ~/.zws)
       lns=$(echo -n $line| wc -m)
-      echo $ln
-      echo $lns
       started=$(echo $line | cut -c$(($ln+2))-$(($ln+15)))
-      echo $started
       # Load Default
     else 
       # Create .zw if it doesn't exist
