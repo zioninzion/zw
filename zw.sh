@@ -2,7 +2,7 @@
 # Make sure gdate is installed --> $ brew install coreutils
 tput civis
 
-# TODO quit method
+# TODO quit method (an option to quit without halting, an option to halt timer/stopwatch (that it can start where it left off)
 
 if [[ "$1" == "-t" ]]; then
   # Timer -t hr min sec
