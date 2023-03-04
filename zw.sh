@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 # Make sure gdate is installed --> $ brew install coreutils
-tput civis
+tput civis # Makes cursor invisible
 
 # TODO quit method (an option to quit without halting, an option to halt timer/stopwatch (that it can start where it left off)
 
